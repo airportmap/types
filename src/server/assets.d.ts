@@ -19,18 +19,22 @@ export interface Assets {
 }
 
 export interface AssetManifest {
-    css: Record< string, {
-        href: string;
-        dependencies?: string[];
-        media?: string;
-        rel?: string;
-    } >;
-    js: Record< string, {
-        src: string;
-        dependencies?: string[];
-        type?: 'module' | 'script';
-        defer?: boolean;
-        async?: boolean;
-    } >;
+    assets: {
+        css: Record< string, {
+            href: string;
+            dependencies?: string[];
+            media?: string;
+            rel?: string;
+            global?: boolean;
+        } >;
+        js: Record< string, {
+            src: string;
+            dependencies?: string[];
+            type?: 'module' | 'script';
+            defer?: boolean;
+            async?: boolean;
+            global?: boolean;
+        } >;
+    };
     preload?: Assets[ 'preload' ];
 }
