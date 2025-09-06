@@ -1,3 +1,5 @@
+export * from './i18n';
+
 export interface ServerConfig {
     host: string;
     port: number;
