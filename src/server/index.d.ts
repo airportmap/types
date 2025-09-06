@@ -1,6 +1,7 @@
 export * from './i18n';
 
 export interface ServerConfig {
+    cfgBase: string;
     host: string;
     port: number;
     https: boolean;
@@ -17,5 +18,9 @@ export interface ServerConfig {
         enabled: boolean;
         viewEngine?: string;
         viewPath?: string;
+    };
+    router?: {
+        enabled: boolean;
+        configPath: string;
     };
 }
