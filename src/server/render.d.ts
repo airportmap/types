@@ -1,3 +1,5 @@
+import { Assets } from './assets';
+
 export interface GlobalContext {
     fn: {
         i18n: ( key: string, options?: any ) => string;
@@ -28,6 +30,7 @@ export interface RenderOptions {
     assets?: {
         css?: string[];
         js?: string[];
+        preload?: Assets[ 'preload' ];
     };
     meta?: Partial< GlobalContext[ 'meta' ] >;
     data?: Record< string, any >;
