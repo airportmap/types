@@ -5,5 +5,7 @@ export interface ServerConfig {
         https: boolean;
         debug: boolean;
     };
-    paths: Record< string, string >;
+    paths: {
+        static: Record< string, string >;
+    };
 }
