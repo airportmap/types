@@ -11,3 +11,9 @@ export interface ServerConfig {
         controllers: string;
     };
 }
+
+export interface AppConfig extends ServerConfig {
+    _express: {
+        viewEngine?: string;
+    };
+}
