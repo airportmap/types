@@ -1,4 +1,5 @@
 export * from './i18n';
+export * from './render';
 export * from './routes';
 
 export interface ServerConfig {
