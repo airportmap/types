@@ -17,10 +17,11 @@ export interface ServerConfig {
     views?: {
         enabled: boolean;
         viewEngine?: string;
-        viewPath?: string;
+        viewBase?: string;
     };
     router?: {
         enabled: boolean;
         configPath: string;
+        cntrlBase: string;
     };
 }
