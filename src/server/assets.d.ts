@@ -6,7 +6,7 @@ export interface Assets {
     } >;
     js: Array< {
         src: string;
-        type?: 'module' | 'text/javascript';
+        type?: 'module' | 'script';
         defer?: boolean;
         async?: boolean;
     } >;
