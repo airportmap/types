@@ -35,3 +35,9 @@ export interface RenderOptions {
     meta?: Partial< GlobalContext[ 'meta' ] >;
     data?: Record< string, any >;
 }
+
+export interface RenderContext extends GlobalContext {
+    assets: Assets;
+    bodyClass?: string;
+    data?: Record< string, any >;
+}
