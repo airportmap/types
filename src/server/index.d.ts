@@ -4,10 +4,12 @@ export * from './render';
 export * from './routes';
 
 export interface ServerConfig {
-    host: string;
-    port: number;
-    https: boolean;
-    debug: boolean;
+    server: {
+        host: string;
+        port: number;
+        https: boolean;
+        debug: boolean;
+    };
     mods?: {
         i18n?: {
             enabled: boolean;
