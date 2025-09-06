@@ -1,7 +1,7 @@
 export interface Route {
+    method: string;
     path: string;
     controller: string;
-    method: string;
 }
 
 export interface RouteConfig {
