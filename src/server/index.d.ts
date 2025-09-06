@@ -1,4 +1,8 @@
 export interface ServerConfig {
+    host: string;
+    port: number;
+    https: boolean;
+    debug: boolean;
     i18n?: {
         enabled: boolean;
         configPath: string;
