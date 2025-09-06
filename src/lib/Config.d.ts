@@ -7,5 +7,7 @@ export interface ServerConfig {
     };
     paths: {
         static: Record< string, string >;
+        views: string;
+        controllers: string;
     };
 }
