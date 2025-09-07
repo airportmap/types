@@ -10,6 +10,7 @@ export interface ServerConfig {
         https: boolean;
         debug: boolean;
     };
+    statics?: Record< string, string >;
     mods?: {
         i18n?: {
             enabled: boolean;
