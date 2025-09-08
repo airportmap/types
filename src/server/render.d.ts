@@ -22,11 +22,13 @@ export interface GlobalContext {
         canonical?: string;
         robots?: string;
     };
+    htmlClasses?: string;
 }
 
 export interface RenderOptions {
     template: string;
-    bodyClass?: string;
+    htmlClasses?: string;
+    bodyClasses?: string;
     assets?: {
         css?: string[];
         js?: string[];
@@ -38,6 +40,6 @@ export interface RenderOptions {
 
 export interface RenderContext extends GlobalContext {
     assets: Assets;
-    bodyClass?: string;
+    bodyClasses?: string;
     data?: Record< string, any >;
 }
