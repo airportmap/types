@@ -2,7 +2,7 @@ import { Assets } from './assets';
 
 export interface GlobalContext {
     fn: {
-        i18n: ( key: string, options?: any ) => string;
+        i18n?: ( key: string, options?: any ) => string;
     };
     app: {
         env: string;
