@@ -13,7 +13,10 @@ export interface GlobalContext {
         env: string;
         host: string;
         protocol: string;
-        supportedLngs?: ReadonlyArray< string >;
+        supportedLngs?: Array< {
+            code: string;
+            label: string;
+        } >;
         locale?: string;
         theme?: string;
     };
