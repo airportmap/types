@@ -13,7 +13,9 @@ export interface GlobalContext {
         env: string;
         host: string;
         protocol: string;
-        lang: string;
+        supportedLngs?: Record< string, string >;
+        lang?: string;
+        theme?: string;
     };
     site: {
         originalUrl: string;
