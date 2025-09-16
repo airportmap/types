@@ -2,7 +2,7 @@ import { Assets } from './assets';
 
 export interface CookieContext {
     theme?: string;
-    lang?: string;
+    locale?: string;
 }
 
 export interface GlobalContext {
@@ -14,7 +14,7 @@ export interface GlobalContext {
         host: string;
         protocol: string;
         supportedLngs?: Record< string, string >;
-        lang?: string;
+        locale?: string;
         theme?: string;
     };
     site: {
