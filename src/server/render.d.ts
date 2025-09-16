@@ -13,7 +13,7 @@ export interface GlobalContext {
         env: string;
         host: string;
         protocol: string;
-        supportedLngs?: Record< string, string >;
+        supportedLngs?: string[];
         locale?: string;
         theme?: string;
     };
