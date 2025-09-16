@@ -1,5 +1,10 @@
 import { Assets } from './assets';
 
+export interface CookieContext {
+    theme?: string;
+    lang?: string;
+}
+
 export interface GlobalContext {
     fn: {
         i18n?: ( key: string, options?: any ) => string;
