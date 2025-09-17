@@ -6,6 +6,7 @@ export interface ServerConfig {
         debug: boolean;
     };
     statics?: Record< string, string >;
+    cookies?: Record< string, string >;
     mods?: {
         i18n?: {
             enabled: boolean;
