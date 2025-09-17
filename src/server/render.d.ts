@@ -1,9 +1,6 @@
 import { Assets } from './assets';
 
-export interface CookieContext {
-    theme?: string;
-    locale?: string;
-}
+export type CookieContext = Record< string, string >;
 
 export interface GlobalContext {
     fn: {
