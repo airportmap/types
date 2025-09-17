@@ -14,9 +14,8 @@ export interface GlobalContext {
             code: string;
             label: string;
         } >;
-        locale?: string;
-        theme?: string;
     };
+    cookies: Record< string, string >;
     site: {
         originalUrl: string;
         path: string;
