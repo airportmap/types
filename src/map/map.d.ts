@@ -1,6 +1,7 @@
+import { type MapOptions } from 'leaflet';
+
 export interface APMapOptions {
-    mode?: 'theater' | 'normal';
-    fullscreenAllowed?: boolean;
-    zoomMin?: number;
-    zoomMax?: number;
+    mode?: 'normal' | 'theater';
+    allowFullscreen?: boolean;
+    mapOptions?: MapOptions;
 }
