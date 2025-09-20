@@ -1,1 +1,4 @@
-export enum APMapEventType {}
+export enum APMapEventType {
+    POSITION = 'apmap-position',
+    ZOOM = 'apmap-zoom',
+}
