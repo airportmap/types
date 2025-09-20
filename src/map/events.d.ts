@@ -1,4 +1,4 @@
 export enum APMapEventType {
-    POSITION = 'apmap-position',
-    ZOOM = 'apmap-zoom',
+    POSITION_CHANGED = 'position-changed',
+    ZOOM_CHANGED = 'zoom-changed',
 }
