@@ -1,7 +1,11 @@
 import { type MapOptions } from 'leaflet';
 
 export interface APMapOptions {
+    mapOptions?: MapOptions;
     mode?: 'normal' | 'theater';
     allowFullscreen?: boolean;
-    mapOptions?: MapOptions;
+    urlManipulation?: boolean;
+    trackUserPosition?: boolean;
+    enableDeviceOrientation?: boolean;
+    showDayNightBoundary?: boolean;
 }
