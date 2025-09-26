@@ -1,12 +1,12 @@
 import { MapOptions } from 'leaflet';
-import { StateStorageOptions } from './state';
+import { APMapStateStorageOptions } from './state';
 
 export interface APMapOptions {
     mapOptions?: MapOptions;
     mode?: 'normal' | 'theater';
     allowFullscreen?: boolean;
     urlManipulation?: boolean;
-    stateStorage?: StateStorageOptions;
+    stateStorage?: APMapStateStorageOptions;
     trackUserPosition?: boolean;
     enableDeviceOrientation?: boolean;
     showDayNightBoundary?: boolean;

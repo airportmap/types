@@ -5,7 +5,7 @@ export interface APMapState {
     [ key: string ]: any;
 }
 
-export interface StateStorageOptions {
+export interface APMapStateStorageOptions {
     enabled?: boolean;
     restoreOnLoad?: boolean;
     mapId?: string;
