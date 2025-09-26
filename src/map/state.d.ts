@@ -1,7 +1,7 @@
 export interface APMapState {
-    lat: number;
-    lng: number;
-    zoom: number;
+    lat?: number;
+    lng?: number;
+    zoom?: number;
     [ key: string ]: any;
 }
 
