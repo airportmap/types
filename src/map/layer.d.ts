@@ -13,4 +13,6 @@ export interface APMapLayerOptions extends LayerOptions {
     opacity?: number;
 }
 
-export interface APMapTileLayerOptions extends APMapLayerOptions, TileLayerOptions {}
+export interface APMapTileLayerOptions extends APMapLayerOptions, TileLayerOptions {
+    url: string;
+}
