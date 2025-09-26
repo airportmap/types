@@ -1,7 +1,7 @@
-import { LayerOptions } from 'leaflet';
+import { LayerOptions, TileLayerOptions } from 'leaflet';
 
 export interface APMapLayerOptions extends LayerOptions {
-    id: string;
+    _id: string;
     name: string;
     description?: string;
     group?: string;
@@ -12,3 +12,5 @@ export interface APMapLayerOptions extends LayerOptions {
     interactive?: boolean;
     opacity?: number;
 }
+
+export interface APMapTileLayerOptions extends APMapLayerOptions, TileLayerOptions {}
