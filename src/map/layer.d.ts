@@ -16,3 +16,10 @@ export interface APMapLayerOptions extends LayerOptions {
 export interface APMapTileLayerOptions extends APMapLayerOptions, TileLayerOptions {
     url: string;
 }
+
+export interface APMapDayNightLayerOptions extends APMapLayerOptions {
+    animationSpeed?: number;
+    nightColor?: string;
+    nightOpacity?: number;
+    resolution?: number;
+}
