@@ -1,4 +1,5 @@
 import { LayerOptions, TileLayerOptions } from 'leaflet';
+import { APMapTheme } from './map';
 
 export interface APMapLayerOptions extends LayerOptions {
     _id: string;
@@ -15,6 +16,7 @@ export interface APMapLayerOptions extends LayerOptions {
 
 export interface APMapTileLayerOptions extends APMapLayerOptions, TileLayerOptions {
     url: string;
+    themedURLs?: Partial< Record< APMapTheme, string > >;
 }
 
 export interface APMapDayNightLayerOptions extends APMapLayerOptions {
