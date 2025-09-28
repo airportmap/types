@@ -1,3 +1,19 @@
+export enum APMapMode {
+    NORMAL = 'normal',
+    THEATER = 'theater'
+}
+
+export enum APMapTheme {
+    LIGHT = 'light',
+    DARK = 'dark'
+}
+
+export enum APMapPerformance {
+    HIGH = 'high',
+    MEDIUM = 'medium',
+    LOW = 'low'
+}
+
 export enum APMapEventType {
     THEME_CHANGED = 'theme-changed',
     POSITION_CHANGED = 'position-changed',

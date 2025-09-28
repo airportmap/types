@@ -1,5 +1,5 @@
 import { LayerOptions, TileLayerOptions } from 'leaflet';
-import { APMapTheme } from './map';
+import { APMapPerformance, APMapTheme } from './enum';
 
 export interface APMapLayerOptions extends LayerOptions {
     _id: string;
@@ -9,7 +9,7 @@ export interface APMapLayerOptions extends LayerOptions {
     visible?: boolean;
     minZoom?: number;
     maxZoom?: number;
-    performanceImpact?: 'low' | 'medium' | 'high';
+    performanceImpact?: APMapPerformance;
     interactive?: boolean;
     opacity?: number;
 }

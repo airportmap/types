@@ -1,10 +1,7 @@
 import { MapOptions } from 'leaflet';
+import { APMapMode, APMapTheme } from './enum';
 import { APMapStateStorageOptions } from './state';
 import { APMapDayNightLayerOptions } from './layer';
-
-export type APMapMode = 'normal' | 'theater';
-
-export type APMapTheme = 'light' | 'dark';
 
 export interface APMapOptions {
     mapOptions?: MapOptions;
