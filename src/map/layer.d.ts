@@ -21,5 +21,6 @@ export interface APMapDayNightLayerOptions extends APMapLayerOptions {
     animationSpeed?: number;
     nightColor?: string;
     nightOpacity?: number;
+    longitudeRange?: number;
     resolution?: number;
 }
