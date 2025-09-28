@@ -8,7 +8,6 @@
     "url": "https://komed3.de"
   },
   "types": "src/index.d.ts",
-  "main": "src/index.d.ts",
   "devDependencies": {
     "@types/leaflet": "^1.9.20"
   }
