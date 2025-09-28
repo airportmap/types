@@ -5,7 +5,7 @@ import { APMapDayNightLayerOptions } from './layer';
 export interface APMapOptions {
     mapOptions?: MapOptions;
     mode?: 'normal' | 'theater';
-    style?: 'light' | 'dark';
+    theme?: 'light' | 'dark';
     allowFullscreen?: boolean;
     urlManipulation?: boolean;
     stateStorage?: APMapStateStorageOptions;
