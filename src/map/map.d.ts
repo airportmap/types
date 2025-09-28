@@ -10,7 +10,7 @@ export interface APMapOptions {
     stateStorage?: APMapStateStorageOptions;
     trackUserPosition?: boolean;
     enableDeviceOrientation?: boolean;
-    dayNight?: APMapDayNightLayerOptions & {
+    dayNight?: Partial< APMapDayNightLayerOptions > & {
         enabled?: boolean;
     };
 }
