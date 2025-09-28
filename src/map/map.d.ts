@@ -1,5 +1,6 @@
 import { MapOptions } from 'leaflet';
 import { APMapStateStorageOptions } from './state';
+import { APMapDayNightLayerOptions } from './layer';
 
 export interface APMapOptions {
     mapOptions?: MapOptions;
@@ -9,5 +10,7 @@ export interface APMapOptions {
     stateStorage?: APMapStateStorageOptions;
     trackUserPosition?: boolean;
     enableDeviceOrientation?: boolean;
-    showDayNightBoundary?: boolean;
+    dayNight?: APMapDayNightLayerOptions & {
+        enabled?: boolean;
+    };
 }
