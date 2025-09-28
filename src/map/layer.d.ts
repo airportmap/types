@@ -1,5 +1,5 @@
 import { LayerOptions, TileLayerOptions } from 'leaflet';
-import { APMapPerformance, APMapTheme } from './enum';
+import { APMapPerformance, APMapTheme } from './types';
 
 export interface APMapLayerOptions extends LayerOptions {
     _id: string;

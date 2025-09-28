@@ -1,5 +1,5 @@
 import { MapOptions } from 'leaflet';
-import { APMapMode, APMapTheme } from './enum';
+import { APMapMode, APMapTheme } from './types';
 import { APMapStateStorageOptions } from './state';
 import { APMapDayNightLayerOptions } from './layer';
 
