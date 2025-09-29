@@ -18,7 +18,7 @@ type UnitConversionMap< S extends APMapUnitSystems > = {
 };
 
 export interface APMapUnitSystemEntry< S extends APMapUnitSystems > {
-    base: S;
+    base: string;
     convert: UnitConversionMap< S >;
     units: Record< string, number >;
 }
