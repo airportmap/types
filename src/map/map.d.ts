@@ -12,8 +12,8 @@ export type APMapUnits = 'default' | 'metric' | 'imperial';
 export type APMapPerformance = 'high' | 'medium' | 'low';
 
 export type APMapEventType =
-    'theme-changed' | 'position-changed' | 'zoom-changed' | 'user-position-changed' |
-    'layer-added' | 'layer-removed' | 'layer-toggled';
+    'theme-changed' | 'units-changed' | 'position-changed' | 'zoom-changed' |
+    'user-position-changed' | 'layer-added' | 'layer-removed' | 'layer-toggled';
 
 export interface APMapOptions {
     mapOptions?: MapOptions;
