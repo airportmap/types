@@ -9,6 +9,8 @@ export type APMapTheme = 'light' | 'dark';
 
 export type APMapUnits = 'default' | 'metric' | 'imperial';
 
+export type APMapUnitSystems = 'metric' | 'imperial' | 'avionic';
+
 export type APMapPerformance = 'high' | 'medium' | 'low';
 
 export type APMapEventType =
