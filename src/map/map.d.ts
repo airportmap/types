@@ -7,6 +7,8 @@ export type APMapMode = 'normal' | 'theater';
 
 export type APMapTheme = 'light' | 'dark';
 
+export type APMapUnits = 'default' | 'metric' | 'imperial';
+
 export type APMapPerformance = 'high' | 'medium' | 'low';
 
 export type APMapEventType =
@@ -17,6 +19,7 @@ export interface APMapOptions {
     mapOptions?: MapOptions;
     mode?: APMapMode;
     theme?: APMapTheme;
+    units?: APMapUnits;
     uiControl?: APMapUIControl;
     allowFullscreen?: boolean;
     urlManipulation?: boolean;
