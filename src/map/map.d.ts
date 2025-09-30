@@ -27,6 +27,15 @@ export type APMapUnitSystem = {
     [ T in APMapUnitSystemType ]: APMapUnitSystemEntry< APMapUnitSystems >;
 };
 
+export interface APMapScaleBar {
+    ratio: number;
+    scale: string;
+    distance: number;
+    unit: string;
+    pixels: number;
+    label: string;
+}
+
 export type APMapPerformance = 'high' | 'medium' | 'low';
 
 export type APMapEventType =
