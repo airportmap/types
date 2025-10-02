@@ -8,8 +8,8 @@ export type APMapUIControl = Partial< Record< APMapUIControlGroup, {
 } > >;
 
 export interface APMapUIBntOptions {
-    handler?: CallableFunction;
-    icon?: string;
+    handler: CallableFunction;
+    icon: string;
     activeIcon?: string;
     ariaLabel?: string;
     classes?: string;
