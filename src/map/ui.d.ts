@@ -1,6 +1,6 @@
 export type APMapUIControlGroup =
     'attributionControl' | 'fullscreenControl' | 'headingControl' |
-    'layerControl' | 'settingsControl' | 'stateControl' | 'theaterControl' |
+    'layerControl' | 'scrollControl' | 'settingsControl' | 'stateControl' |
     'trackingControl' | 'zoomControl';
 
 export type APMapUIControl = Partial< Record< APMapUIControlGroup, {
