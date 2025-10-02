@@ -12,5 +12,5 @@ export interface APMapUIBntOptions {
     icon: string;
     activeIcon?: string;
     ariaLabel?: string;
-    classes?: string;
+    classes?: string[];
 }
