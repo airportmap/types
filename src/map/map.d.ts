@@ -40,7 +40,8 @@ export type APMapPerformance = 'high' | 'medium' | 'low';
 
 export type APMapEventType =
     'theme-changed' | 'units-changed' | 'position-changed' | 'zoom-changed' |
-    'user-position-changed' | 'layer-added' | 'layer-removed' | 'layer-toggled';
+    'layer-added' | 'layer-removed' | 'layer-toggled' | 'user-position-changed' |
+    'device-orientation-changed';
 
 export interface APMapOptions {
     mapOptions?: MapOptions;
