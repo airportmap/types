@@ -36,6 +36,13 @@ export interface APMapScaleBar {
     label: string;
 }
 
+export interface APMapHdgOptions {
+    labels?: 'degrees' | 'cardinal' | 'mixed';
+    pxPerDeg?: number;
+    majorStep?: number;
+    minorStep?: number;
+}
+
 export type APMapPerformance = 'high' | 'medium' | 'low';
 
 export type APMapEventType =
