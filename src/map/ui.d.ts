@@ -15,3 +15,20 @@ export interface APMapUIBntOptions {
     ariaLabel?: string;
     classes?: string[];
 }
+
+export interface APMapScaleBar {
+    ratio: number;
+    scale: string;
+    distance: number;
+    unit: string;
+    pixels: number;
+    label: string;
+}
+
+export interface APMapHdgOptions {
+    labels?: 'degrees' | 'cardinal' | 'mixed';
+    pxPerDeg?: number;
+    majorStep?: number;
+    minorStep?: number;
+    speed?: number;
+}

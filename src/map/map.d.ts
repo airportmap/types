@@ -2,46 +2,11 @@ import { MapOptions } from 'leaflet';
 import { APMapStateStorageOptions } from './state';
 import { APMapDayNightLayerOptions } from './layer';
 import { APMapUIControl } from './ui';
+import { APMapUnits } from './units';
 
 export type APMapMode = 'normal' | 'theater';
 
 export type APMapTheme = 'light' | 'dark';
-
-export type APMapUnits = 'default' | 'metric' | 'imperial';
-
-export type APMapUnitSystems = 'metric' | 'imperial' | 'avionic';
-
-export type APMapUnitSystemType = 'distance' | 'speed' | 'altitude';
-
-type UnitConversionMap< S extends APMapUnitSystems > = {
-    [ K in Exclude< APMapUnitSystems, S > ]: number;
-};
-
-export interface APMapUnitSystemEntry< S extends APMapUnitSystems > {
-    base: string;
-    convert: UnitConversionMap< S >;
-    units: Record< string, number >;
-}
-
-export type APMapUnitSystem = {
-    [ T in APMapUnitSystemType ]: APMapUnitSystemEntry< APMapUnitSystems >;
-};
-
-export interface APMapScaleBar {
-    ratio: number;
-    scale: string;
-    distance: number;
-    unit: string;
-    pixels: number;
-    label: string;
-}
-
-export interface APMapHdgOptions {
-    labels?: 'degrees' | 'cardinal' | 'mixed';
-    pxPerDeg?: number;
-    majorStep?: number;
-    minorStep?: number;
-}
 
 export type APMapPerformance = 'high' | 'medium' | 'low';
 
