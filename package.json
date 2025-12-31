@@ -9,6 +9,6 @@
   },
   "types": "src/index.d.ts",
   "devDependencies": {
-    "@types/leaflet": "^1.9.20"
+    "@types/leaflet": "^1.9.21"
   }
 }
